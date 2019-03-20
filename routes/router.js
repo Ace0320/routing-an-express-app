@@ -31,6 +31,7 @@ router.get('/sample', (req, res, next) => {
 // Defer path requests to a particular controller
 router.use('/dev', require('../controllers/developer.js'))
 router.use('/venky', require('../controllers/Venky.js'))
+router.use('/group', require('../controllers/group.js'))
 
 
 console.log('END routing')
